@@ -1,0 +1,387 @@
+.homepage{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+.homepage .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homepage .header .logo{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 16px;
+    background: rgba(245, 132, 31, 0.09);
+    border-radius: 16px;
+    width: fit-content;
+    cursor: pointer;
+
+}
+.homepage .header .logo h2{
+    color: #F5841F;
+    font-size: 16px;
+    font-weight: 600;
+}
+.homepage .header .login{
+    background: rgba(245, 132, 31, 0.09);
+    border-radius: 16px;
+    width: 64px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F5841F;
+    cursor: pointer;
+}
+.homepage .header .date p{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+.homepage .section{
+    padding-top: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homepage .section .title h2{
+    font-size: 75.05px;
+    font-weight: 700;
+    max-width: 776px;
+    text-align: center;
+}
+.homepage .section .title{
+    position: relative;
+}
+.homepage .section .title .title_shape{
+    position: absolute;
+    bottom: 40px;
+    right: -13px;
+}
+
+.homepage .section .title h2 span{
+    font-size: 75.05px;
+    font-weight: 700;
+    width: 776px;
+    text-align: center;
+    color: #F5841F;
+}
+.homepage .section .inputs{
+    margin-top: 89px;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+.homepage .section .inputs .semestre_input{
+    padding-left: 119px;
+    background: #FFFFFF;
+    height: 93.01px;
+    border-radius: 29.26px;
+    border: 3px solid #F5841F;
+    width: 769px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.homepage .section .inputs svg{
+    position: absolute;
+    left: 37px;
+    bottom: 143px;
+}
+.homepage .section .inputs img{
+    position: absolute;
+    top: 143px;
+    left: 37px;
+    width: 49px;
+    height: 49px;
+}
+.homepage .section .inputs .semestre_input::placeholder{
+    color: #C2C2C2;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: inherit;
+    position: relative;
+    top: 5px;
+}
+.homepage .section .buttons{
+    margin-top: 61px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+.homepage .section .buttons button{
+    background: #F5841F;
+    border-radius: 13px;
+    width: 134px;
+    height: 52px;
+    border: none;
+    color: white;
+    font-size: 27.05px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.homepage .section .buttons a{
+    font-size: 27.05px;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #9C9C9C;
+    cursor: pointer;
+}
+
+
+.homepage .first_decoration{
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.homepage .sec_decoration{
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+.homepage .third_decoration{
+    position: absolute;
+    right: 95px;
+    bottom: 0;
+}
+.homepage .semestres_background,
+.homepage .subjects_background
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage .semestres_background .semestres,
+.homepage .subjects_background .subjects{
+    background-color: white;
+    border: 2px solid #F5841F;
+    border-radius: 14px;
+}
+.homepage .semestres_background .semestres p,
+.homepage .subjects_background .subjects p{
+    border-bottom: 1px solid black;
+    padding: 20px;
+    width: 350px;
+    font-size: 17px;
+    color: #8B8B8B;
+    cursor: pointer;
+    transition: .6s;
+}
+.homepage .semestres_background .semestres p:hover,
+.homepage .subjects_background .subjects p:hover{
+    font-size: 18px;
+}
+
+
+
+@media (max-width:822px) {
+    .homepage .section .inputs .semestre_input{
+        width: 650px;
+    }
+    .homepage .section .title h2 span{
+        font-size: 50px;
+        font-weight: 700;
+        max-width: 776px;
+        text-align: center;
+        color: #F5841F;
+    }
+    .homepage .section .title h2{
+        font-size: 50px;
+    }
+}
+@media (max-width:685PX) {
+    .homepage .section .inputs .semestre_input{
+        width: 600px;
+    }
+    .homepage .section .inputs .semestre_input::placeholder{
+        color: #C2C2C2;
+        font-weight: 400;
+        font-size: 25PX;
+        line-height: inherit;
+        position: relative;
+        top: 5px;
+    }
+}
+@media (max-width:651px) {
+    .homepage .section .inputs .semestre_input{
+        width: 600px;
+    }
+}
+@media (max-width:633px) {
+    .homepage .section .inputs .semestre_input{
+        width: 500px;
+    }
+    .homepage .section .inputs .semestre_input::placeholder{
+        color: #C2C2C2;
+        font-weight: 400;
+        font-size: 20PX;
+        line-height: inherit;
+        position: relative;
+        top: 5px;
+    }
+}
+@media (max-width:538px) {
+    .homepage .section .inputs .semestre_input{
+        width: 400px;
+    }
+    .homepage .section .inputs .semestre_input::placeholder{
+        color: #C2C2C2;
+        font-weight: 400;
+        font-size: 18PX;
+        line-height: inherit;
+        position: relative;
+        top: 5px;
+    }
+    .homepage .header .date p{
+        font-size: 18px;
+    }
+    .homepage .header .logo{
+        padding: 5px 4px;
+        gap: 10px;
+    }
+    .homepage .header .logo h2{
+        font-size: 13px;
+    }
+    .homepage .header .logo .svg_logo{
+        width: 25px;
+    }
+    .homepage .section .title h2{
+        font-size: 40px;
+    }
+    .homepage .header .login{
+        width: 47px;
+        height: 42px;
+        border-radius: 50%;
+    }
+    .homepage .section .buttons button{
+        width: 139px;
+        height: 42px;
+        font-size: 15px;
+    }
+    .homepage .first_decoration,
+    .homepage .sec_decoration,
+    .homepage .third_decoration{
+        display: none;
+    }
+}
+@media (max-width:474px) {
+    .homepage .section .title h2{
+        font-size: 40px;
+    }
+    .homepage .section .title h2 span{
+        font-size: 40px;
+    }
+    .homepage .section .buttons{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .homepage .section .buttons a{
+        font-size: 12px;
+    }
+
+}
+@media (max-width:422px) {
+    .homepage .section .title h2{
+        font-size: 31.05px;
+    }
+    .homepage .section .title h2 span{
+        font-size: 31.05px;
+    }
+    .homepage .section .buttons{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .homepage .section .inputs .semestre_input{
+        width: 299px;
+        height: 75px;
+        font-size: 20px;
+    }
+    .homepage .section .inputs .semestre_input::placeholder{
+        color: #C2C2C2;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: inherit;
+        position: relative;
+        top: 0px;
+    }
+    .homepage .section .inputs{
+        margin-top: 52px;
+    }
+    .homepage .header .date p{
+        font-size: 15px;
+    }
+    .homepage .section .inputs svg{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 37px;
+        bottom: 124px;
+    }
+    .homepage .section .inputs img{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 37px;
+        top: 119px;
+    }
+    .homepage .section .inputs .semestre_input{
+        padding-left: 80px;
+    }
+    .homepage .section .title .title_shape{
+        position: absolute;
+        bottom: 34px;
+        right: 9px;
+    }
+    .homepage .semestres_background .semestres p,
+    .homepage .subjects_background .semestres p
+    {
+        border-bottom: 1px solid black;
+        padding: 15px;
+        width: 280px;
+        font-size: 17px;
+        color: #8B8B8B;
+        cursor: pointer;
+        transition: .6s;
+    }
+}
+@media (max-width:355px) {
+    .homepage .section .title h2{
+        font-size: 30px;
+    }
+    .homepage .section .title h2 span{
+        font-size: 30px;
+    }
+    .homepage .section .buttons{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .homepage .section .inputs .semestre_input{
+        width: 320px;
+    }
+    .homepage .section .inputs .semestre_input::placeholder{
+        color: #C2C2C2;
+        font-weight: 400;
+        font-size: 15PX;
+        line-height: inherit;
+        position: relative;
+        top: 5px;
+    }
+    .homepage .header .date p{
+        font-size: 13px;
+    }
+    .homepage .section .inputs svg{
+        width: 50px;
+    }
+}

@@ -1,0 +1,175 @@
+.login_page{
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.login_page .login_page_first_half{
+    width: 60%;
+    height: 100vh;
+    background: linear-gradient(180deg, #FF902C 0%, #E77107 82.4%, #AB4800 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 150px;
+    gap: 23px;
+}
+.login_page .login_page_first_half h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.login_page .login_page_first_half p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    width: 450px;
+    margin-top: -20px;
+}
+.login_page .login_page_first_half button{
+    padding: 8px 30px;
+    background: #000000;
+    border-radius: 30px;    
+    color: white;
+    border: none;
+}
+.login_page .login_page_first_half img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.login_page .login_page_second_half{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.login_page .login_page_second_half .title{
+    text-align: center;
+    margin-left: -131px;
+}
+.login_page .login_page_second_half .title h2{
+    font-size: 26px;
+    font-weight: bold;
+    color: #333333;
+}
+.login_page .login_page_second_half .title p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    padding-bottom: 30px;
+    margin-left: -25px;
+}
+.login_page .login_page_second_half form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.login_page .login_page_second_half form .email_input{
+    position: relative;
+}
+.login_page .login_page_second_half form .email_input input{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 30px;
+    padding: 18px 63px;
+    width: 307px;
+    height: 60px;
+}
+.login_page .login_page_second_half form .email_input .email_input_icon{
+    position: absolute;
+    left: 22px;
+    top: 18px;
+}
+.login_page .login_page_second_half form button{
+    background: #E27525;
+    border-radius: 30px;
+    padding: 18px 26px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+.login_page .login_page_second_half form a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    text-decoration: none;
+}
+.login_page .login_svg{
+    display: none;
+}
+.login_page .back_icon{
+    position: relative;
+    left: -184px;
+    top: -55px;
+    cursor: pointer;
+}
+
+@media (max-width:1077px) {
+    .login_page .login_page_first_half{
+        padding-left: 100px;
+    }
+    .login_page .back_icon{
+        position: relative;
+        left: -184px;
+        top: -55px;
+    }
+}
+@media (max-width:1036px) {
+    .login_page .back_icon{
+        position: relative;
+        left: -165px;
+        top: -55px;
+    }
+}
+@media (max-width:966px) {
+    .login_page .login_page_first_half{
+        padding-left: 80px;
+    }
+}
+@media (max-width:946px) {
+    .login_page .back_icon{
+        position: relative;
+        left: -155px;
+        top: -55px;
+    }
+}
+
+@media (max-width:898px) {
+    .login_page .login_page_first_half{
+        display: none;
+    }
+    .login_page .login_page_second_half{
+        width: 100vw;
+    }
+    .login_page .login_svg{
+        display: block;
+        margin-bottom: 75px;
+    }
+    .login_page .back_icon{
+        display: block;
+        position: absolute;
+        top: 67px;
+        left: 67px;
+    }
+}
+@media (max-width:408px) {
+    .login_page .back_icon{
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 34px;
+    }
+}
