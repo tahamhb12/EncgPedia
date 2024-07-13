@@ -8,9 +8,8 @@ const Sidebar = (props) => {
     const navigate = useNavigate()
     const setsidebar = props.setsidebar;
     return ( 
-        <div
-        className="sidebar">
-            <div className="logo">
+        <div className="sidebar">
+            <div className="logoo">
                 <img src={logo} alt="" />
                 <h2>EncgPedia</h2>
                 <div onClick={()=>setsidebar(false)} className="close_icon">

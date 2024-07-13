@@ -1,14 +1,13 @@
 .homepage{
     width: 100%;
-    height: 100%;
-    padding: 50px 0;
 }
-.homepage .header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 50px;
 }
-.homepage .header .logo{
+.header .logo{
     display: flex;
     align-items: center;
     gap: 14px;
@@ -19,12 +18,12 @@
     cursor: pointer;
 
 }
-.homepage .header .logo h2{
+.header .logo h2{
     color: #F5841F;
     font-size: 16px;
     font-weight: 600;
 }
-.homepage .header .login{
+.header .login{
     background: rgba(245, 132, 31, 0.09);
     border-radius: 16px;
     width: 64px;
@@ -35,7 +34,7 @@
     color: #F5841F;
     cursor: pointer;
 }
-.homepage .header .date p{
+.header .date p{
     color: #000000;
     font-size: 24px;
     font-weight: 400;
@@ -211,7 +210,7 @@
         font-size: 25PX;
         line-height: inherit;
         position: relative;
-        top: 5px;
+        top: 3px;
     }
 }
 @media (max-width:651px) {
@@ -229,7 +228,7 @@
         font-size: 20PX;
         line-height: inherit;
         position: relative;
-        top: 5px;
+        top: 1px;
     }
 }
 @media (max-width:538px) {
@@ -242,25 +241,25 @@
         font-size: 18PX;
         line-height: inherit;
         position: relative;
-        top: 5px;
+        top: 1px;
     }
-    .homepage .header .date p{
+    .header .date p{
         font-size: 18px;
     }
-    .homepage .header .logo{
+    .header .logo{
         padding: 5px 4px;
         gap: 10px;
     }
-    .homepage .header .logo h2{
+    .header .logo h2{
         font-size: 13px;
     }
-    .homepage .header .logo .svg_logo{
+    .header .logo .svg_logo{
         width: 25px;
     }
     .homepage .section .title h2{
         font-size: 40px;
     }
-    .homepage .header .login{
+    .header .login{
         width: 47px;
         height: 42px;
         border-radius: 50%;
@@ -319,7 +318,7 @@
     .homepage .section .inputs{
         margin-top: 52px;
     }
-    .homepage .header .date p{
+    .header .date p{
         font-size: 15px;
     }
     .homepage .section .inputs svg{
@@ -376,9 +375,9 @@
         font-size: 15PX;
         line-height: inherit;
         position: relative;
-        top: 5px;
+        top: 0;
     }
-    .homepage .header .date p{
+    .header .date p{
         font-size: 13px;
     }
     .homepage .section .inputs svg{
