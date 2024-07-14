@@ -2,6 +2,7 @@ import "./homepage.css"
 import pic from "./ccc.png"
 import Sidebar from "../sidebar/sidebar";
 import { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 const HomePage = () => {
     
 
@@ -12,8 +13,9 @@ const HomePage = () => {
     const [subject,setsubject] = useState("")
     const semestres = ["Semestre 1","Semestre 2","Semestre 3","Semestre 4","Semestre 5","Semestre 6","Semestre 7","Semestre 8","Semestre 9"];
     const subjects = ["Math","Encg","PC"];
-    
 
+    const navigate = useNavigate()
+    
     return (  
         <div className="homepage">
             <div className="section">
@@ -34,7 +36,7 @@ const HomePage = () => {
                     <input type="text" className="semestre_input" value={subject} placeholder="Choose a subject" onClick={()=>setshow_subjects(true)}/>
                 </div>
                 <div className="buttons">
-                    <button>Submit</button>
+                    <button onClick={()=>navigate(`/${semestre.slice(0,1)+semestre.slice(9,10)}/${subject}`)}>Submit</button>
                     <a>Contribute With Us</a>
                 </div>
             </div>

@@ -275,6 +275,7 @@
         display: none;
     }
 }
+
 @media (max-width:474px) {
     .homepage .section .title h2{
         font-size: 40px;

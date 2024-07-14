@@ -1,9 +1,20 @@
 import "./login.css"
 import circles from "./circles.png"
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import useAuthContext from "../context/AuthContext";
+
 const Login = () => {
 
     const navigate = useNavigate()
+    const {login} = useAuthContext()
+    const [email,setemail] = useState("")
+    const [password,setpassowrd] = useState("")
+
+    const handleLogin=(e)=>{
+        e.preventDefault()
+        login({email,password})
+    }
     
     return ( 
         <div className="login_page">
@@ -29,9 +40,9 @@ const Login = () => {
                     <h2>Hello Again!</h2>
                     <p>Welcome Back</p>
                 </div>
-                <form action="">
+                <form onSubmit={handleLogin}>
                     <div className="email_input">
-                        <input type="email" placeholder="Email Adress" />
+                        <input type="email" placeholder="Email Adress" onChange={(e)=>setemail(e.target.value)}/>
                         <svg className="email_input_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.3">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5.25L2.25 4.5H21.75L22.5 5.25V18.75L21.75 19.5H2.25L1.5 18.75V5.25ZM3 6.8025V18H21V6.804L12.465 13.35H11.55L3 6.8025ZM19.545 6H4.455L12 11.8035L19.545 6Z" fill="#333333"/>
@@ -39,14 +50,14 @@ const Login = () => {
                         </svg>
                     </div>
                     <div className="email_input">
-                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Password" onChange={(e)=>setpassowrd(e.target.value)}/>
                         <svg className="email_input_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.3">
                         <path d="M20 12C20 10.897 19.103 10 18 10H17V7C17 4.243 14.757 2 12 2C9.243 2 7 4.243 7 7V10H6C4.897 10 4 10.897 4 12V20C4 21.103 4.897 22 6 22H18C19.103 22 20 21.103 20 20V12ZM9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7V10H9V7Z" fill="#333333"/>
                         </g>
                         </svg>
                     </div>
-                    <button>Login</button>
+                    <button type="submit">Login</button>
                     <a href="">Forgot Password</a>
                 </form>
             </div>
