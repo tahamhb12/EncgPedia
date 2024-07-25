@@ -144,7 +144,7 @@ const HomePage = () => {
                                 <p onClick={()=>{setreq_type("Td");setshowType(false)}}>Td</p>
                                 <p onClick={()=>{setreq_type("Examen");setshowType(false)}}>Examen</p>
                                 </div>}
-                                <input type="text" className="input" placeholder="Teacher" onChange={(e)=>setreq_teacher(e.target.value)}/>
+                                <input type="text" className="input" style={{color:"black"}} placeholder="Teacher" onChange={(e)=>setreq_teacher(e.target.value)}/>
                             </div>
                             <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                                 <div className="drag_link">
