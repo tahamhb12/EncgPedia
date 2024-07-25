@@ -23,7 +23,7 @@ const NavBar = () => {
                     <p>{formattedDate}</p>
                 </div>
                 <div onClick={()=>setsidebar(!sidebar)} className="login">
-                    <h2><i style={{fontSize:"21px"}} class="fa-solid fa-bars"></i></h2>
+                    <h2><i class="nav_icon fa-solid fa-bars"></i></h2>
                 </div>
                 <AnimatePresence>
                 {sidebar && 

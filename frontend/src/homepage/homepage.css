@@ -75,7 +75,7 @@
     padding-left: 119px;
     background: #FFFFFF;
     height: 93.01px;
-    border-radius: 29.26px;
+    border-radius: 20px;
     border: 3px solid #F5841F;
     width: 769px;
     font-size: 29px;
@@ -102,7 +102,7 @@
     top: 5px;
 }
 .homepage .section .buttons{
-    margin-top: 61px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     gap: 36px;
@@ -122,7 +122,7 @@
     font-size: 27.05px;
     font-weight: 300;
     text-decoration: underline;
-    color: #9C9C9C;
+    color: #6A6A6A;
     cursor: pointer;
 }
 
@@ -220,8 +220,26 @@
     padding-left: 25px;
 }
 
-
-
+.header .nav_icon{
+    position: relative;
+    top: -1px;
+    font-size: 17px;
+    display: block;
+}
+.header .login h2{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new_interface .drop_down{
+    position: absolute;
+    right: 20px;
+    font-size: 21px;
+    top: 12px;
+}
 
 @media (max-width:1391px) {
     .header .date p{
@@ -232,6 +250,12 @@
 @media (max-width:884px) {
     .homepage .new_interface .add_new_course{
         display: block;
+    }
+    .homepage .show_contribute{
+        top: 52px;
+        right: 60px;
+        position: absolute;
+        cursor: pointer;
     }
 
 }
@@ -352,6 +376,7 @@
         width: 139px;
         height: 42px;
         font-size: 15px;
+        font-weight: 700;
     }
     .homepage .first_decoration,
     .homepage .sec_decoration,
@@ -438,18 +463,19 @@
         width: 35px;
         height: 35px;
         position: absolute;
-        left: 37px;
-        bottom: 124px;
+        left: 26px;
+        bottom: 107px;
     }
     .homepage .section .inputs img{
         width: 35px;
         height: 35px;
         position: absolute;
-        left: 37px;
-        top: 119px;
+        left: 26px;
+        top: 104px;
     }
     .homepage .section .inputs .semestre_input{
         padding-left: 80px;
+        height: 64px;
     }
     .homepage .section .title .title_shape{
         position: absolute;
