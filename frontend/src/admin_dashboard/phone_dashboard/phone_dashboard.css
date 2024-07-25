@@ -1,0 +1,132 @@
+.phone_dashboard_container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #EBECF0;
+}
+
+.phone_dashboard{
+    padding-top: 250px;
+}
+.phone_dashboard .phone_dashboard_header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 215px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    justify-content: center;
+}
+.phone_dashboard .phone_dashboard_header .user_infos{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.phone_dashboard .phone_dashboard_header .user_infos .infos h2{
+    color: #BBBBBB;
+    font-size: 12px;
+}
+.phone_dashboard .phone_dashboard_header .user_infos .infos p{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.phone_dashboard .phone_dashboard_header .user_infos img{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    border: 4px solid black;
+    outline: white 2px solid;
+}
+.phone_dashboard .phone_dashboard_header .available_courses p{
+    color: #BBBBBB;
+    font-size: 12px;
+}
+.phone_dashboard .phone_dashboard_header .available_courses h2{
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.phone_dashboard .phone_dashboard_header .user_infos,
+.phone_dashboard .phone_dashboard_header .available_courses{
+    padding-left: 29px;
+}
+.phone_dashboard svg{
+    position: absolute;
+    z-index: 9000;
+    right: 19px;
+    top: 45px;
+}
+.phone_dashboard .recenly_added_courses{
+    width: 327px;
+    height: 313px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    margin-inline: auto;
+    padding: 20px;
+}
+.phone_dashboard .recenly_added_courses p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.phone_dashboard .recenly_added_courses .recent_courses .course_infos svg{
+    position: absolute;
+    top: 13px;
+}
+.phone_dashboard .recenly_added_courses .recent_courses{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.phone_dashboard .recenly_added_courses .recent_courses .course_infos{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+.phone_dashboard .recenly_added_courses .recent_courses .course_infos h2{
+    font-size: 12px;
+    font-weight: 600;
+}
+.phone_dashboard .recenly_added_courses .recent_courses .course_infos p{
+    font-size: 12px;
+    color: #BBBBBB;
+}
+
+.phone_dashboard .new_course_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.phone_dashboard .new_course_button button{
+    background: #F5841F;
+    border-radius: 30px;
+    width: 280px;
+    height: 61px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    border: none;
+}
+
+.phone_dashboard .view_assigned_courses_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.phone_dashboard .view_assigned_courses_button a{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}

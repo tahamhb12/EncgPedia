@@ -1,0 +1,93 @@
+.publish_new_course_page .publish_new_course_page_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-inline: 29px;
+}
+.publish_new_course_page .publish_new_course_page_header p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.publish_new_course_page .add_new_course_inputs{
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.publish_new_course_page .add_new_course_inputs .select{
+    padding: 18px 26px;
+    width: 307px;
+    height: 57px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    font-size: 14px;
+    position: relative;
+}
+.publish_new_course_page .add_new_course_inputs .select .icon{
+    position: absolute;
+    right: 17px;
+    top: 22px;
+}
+.publish_new_course_page .add_new_course_inputs .select .semestres{
+    width: 307px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 62px;
+    z-index: 900;
+}
+.publish_new_course_page .add_new_course_inputs .select .semestres p{
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.publish_new_course_page .add_new_course_inputs .select .semestres p:hover{
+    background-color: #DE55DE;
+    border-radius: 14px;
+}
+.publish_new_course_page .drag_here{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    align-items: flex-start;
+    width: 307px;
+    height: 241px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.publish_new_course_page .drag_here p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.publish_new_course_page .drag_here p span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #005FAD;
+}
+.publish_new_course_page .button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.publish_new_course_page .button button{
+    background: #F5841F;
+    border-radius: 15px;
+    width: 307px;
+    height: 61px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    margin-top: 16px;
+}

@@ -1,0 +1,47 @@
+.dash_sidebar{
+    width: 305px;
+    height: 100vh;
+    border-right: solid 1px #858C94;
+    position: absolute;
+    left: 0;
+    position: fixed;
+    padding-top: 50px;
+    background-color: white;
+}
+.dash_sidebar .dash_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.dash_sidebar .dash_logo h2{
+    color:#F5841F ;
+    font-size: 24px;
+    font-weight: 400;
+}
+.dash_sidebar .dash_links{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding-left: 45px;
+    margin-top: 58px;
+}
+.dash_sidebar .dash_links p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.dash_sidebar .dash_links .links{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+.dash_sidebar .dash_links .links .dashboard{
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+}
+.dash_sidebar .dash_links .links .dashboard h3{
+    font-size: 16px;
+    font-weight: 400;
+
+}

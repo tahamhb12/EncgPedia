@@ -7,16 +7,9 @@
     justify-content: space-between;
     padding-top: 50px;
 }
-.header .logo{
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 8px 16px;
-    background: rgba(245, 132, 31, 0.09);
-    border-radius: 16px;
-    width: fit-content;
-    cursor: pointer;
-
+.header .logo img{
+    position: absolute;
+    top: 36px;
 }
 .header .logo h2{
     color: #F5841F;
@@ -85,7 +78,7 @@
     border-radius: 29.26px;
     border: 3px solid #F5841F;
     width: 769px;
-    font-size: 20px;
+    font-size: 29px;
     cursor: pointer;
 }
 .homepage .section .inputs svg{
@@ -161,6 +154,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 .homepage .semestres_background .semestres,
 .homepage .subjects_background .subjects{
@@ -182,11 +176,80 @@
 .homepage .subjects_background .subjects p:hover{
     font-size: 18px;
 }
+.homepage .semestres_background2,
+.homepage .subjects_background2{
+    background-color: white;
+    width: 769px;
+    position: absolute;
+    top: 629px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    height: 150px;
+}
+.homepage .semestres_background2 .semestres2,
+.homepage .subjects_background2 .semestres2{
+    width: 769px;
+    box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.19);
+    border-radius: 14px;
+    height: 165px;;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: black white;
+    scroll-behavior: smooth;
+}
+
+.homepage .semestres_background2 .semestres2 p,
+.homepage .subjects_background2 .semestres2 p{
+    width: 769px;
+    margin-bottom: 1px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.homepage .drive_link{
+    width: 385px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid #BDBABA;
+    padding-left: 25px;
+}
 
 
 
+
+@media (max-width:1391px) {
+    .header .date p{
+        display: none;
+    }
+
+}
+@media (max-width:884px) {
+    .homepage .new_interface .add_new_course{
+        display: block;
+    }
+
+}
 @media (max-width:822px) {
-    .homepage .section .inputs .semestre_input{
+    .homepage .section .inputs .semestre_input,
+    .homepage .semestres_background2,
+    .homepage .semestres_background2 .semestres2{
+        width: 650px;
+    }
+    .homepage .semestres_background2{
+        top: 568px;
+    }
+    .homepage .subjects_background2{
+        top: 693px !important;
+    }
+    .homepage .section .inputs .semestre_input,
+    .homepage .subjects_background2,
+    .homepage .subjects_background2 .semestres2{
         width: 650px;
     }
     .homepage .section .title h2 span{
@@ -201,7 +264,14 @@
     }
 }
 @media (max-width:685PX) {
-    .homepage .section .inputs .semestre_input{
+    .homepage .section .inputs .semestre_input,
+    .homepage .semestres_background2,
+    .homepage .semestres_background2 .semestres2{
+        width: 600px;
+    }
+    .homepage .section .inputs .semestre_input,
+    .homepage .subjects_background2,
+    .homepage .subjects_background2 .semestres2{
         width: 600px;
     }
     .homepage .section .inputs .semestre_input::placeholder{
@@ -219,7 +289,14 @@
     }
 }
 @media (max-width:633px) {
-    .homepage .section .inputs .semestre_input{
+    .homepage .section .inputs .semestre_input,
+    .homepage .semestres_background2,
+    .homepage .semestres_background2 .semestres2{
+        width: 500px;
+    }
+    .homepage .section .inputs .semestre_input,
+    .homepage .subjects_background2,
+    .homepage .subjects_background2 .semestres2{
         width: 500px;
     }
     .homepage .section .inputs .semestre_input::placeholder{
@@ -232,7 +309,14 @@
     }
 }
 @media (max-width:538px) {
-    .homepage .section .inputs .semestre_input{
+    .homepage .section .inputs .semestre_input,
+    .homepage .semestres_background2,
+    .homepage .semestres_background2 .semestres2{
+        width: 400px;
+    }
+    .homepage .section .inputs .semestre_input,
+    .homepage .subjects_background2,
+    .homepage .subjects_background2 .semestres2{
         width: 400px;
     }
     .homepage .section .inputs .semestre_input::placeholder{
@@ -274,6 +358,31 @@
     .homepage .third_decoration{
         display: none;
     }
+    .homepage .semestres_background,
+    .homepage .subjects_background
+    {
+        display: flex;
+    }
+    .homepage .semestres_background2,
+    .homepage .subjects_background2
+    {
+        display: none;
+    }
+    .homepage .new_interface .add_new_course .add_new_inputs input,
+    .homepage .new_interface .add_new_course .drag_link,
+    .homepage .drive_link,
+    .homepage .new_interface .semestres{
+        width: 303px !important;
+    }
+
+    .homepage .new_interface .add_new_course .drag_link p{
+        font-size: 13px;
+    }
+    .header .logo img{
+        position: absolute;
+        top: 36px;
+        width: 190px;
+    }
 }
 
 @media (max-width:474px) {
@@ -289,6 +398,9 @@
     }
     .homepage .section .buttons a{
         font-size: 12px;
+    }
+    .homepage .new_interface .add_new_course{
+        padding: 27px;
     }
 
 }
@@ -356,6 +468,13 @@
         transition: .6s;
     }
 }
+@media (max-width:400px) {
+    .header .logo img{
+        position: absolute;
+        top: 51px;
+        width: 126px;
+    }
+}
 @media (max-width:355px) {
     .homepage .section .title h2{
         font-size: 30px;
@@ -384,4 +503,46 @@
     .homepage .section .inputs svg{
         width: 50px;
     }
+}
+
+.homepage .add_request{
+    width: 157px;
+    height: 50px;
+    background: #F5841F;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.homepage .add_new_course{
+    position: relative;
+}
+.homepage .show_contribute{
+    top: 30px;
+    right: 55px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.homepage .new_interface .semestres{
+    width: 307px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 62px;
+    z-index: 900;
+}
+.homepage .new_interface .semestres p{
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.homepage .new_interface .semestres p:hover{
+    background-color: #DE55DE;
+    border-radius: 14px;
 }

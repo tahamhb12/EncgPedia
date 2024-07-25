@@ -1,0 +1,81 @@
+.dashboards {
+    padding-left: 295px;
+    padding-top: 76px;
+}
+.dashboard_interface .user_infos h2{
+    font-size: 48px;
+    font-weight: 400;
+}
+.dashboard_interface .user_infos span{
+    color: #6D7580;
+}
+.dashboard_interface .user_infos p{
+    color: #858C94;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.dashboard_interface .websit_infos{
+    display: flex;
+    margin-top: 54px;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dashboard_interface .websit_infos .courses{
+    padding: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 32px rgba(208, 210, 218, 0.15);
+    border-radius: 8px;
+    width: 298px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 26px;
+}
+.dashboard_interface .websit_infos .courses .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    line-height: 1.1;
+}
+.dashboard_interface .websit_infos .courses .infos p{
+    color: #A3AED0;
+    font-size: 16px;
+}
+.dashboard_interface .websit_infos .courses .infos .courses_number{
+    color: #1B2559;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.dashboard_interface .graph{
+    max-width: 995px;
+    height: 347px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout_img{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 32px;
+    top: 78px;
+    gap: 11px;
+    cursor: pointer;
+}
+.logout_img .icon{
+    font-size: 22px;
+    color: #F5841F;
+}
+.hhhh{
+    position: absolute;
+    right: 48px;
+    top: 68px;
+}

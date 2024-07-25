@@ -51,7 +51,22 @@
     right: 25px;
     font-size: 20px;
     cursor: pointer;
-
+}
+.sidebar .bottom{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar .bottom div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sidebar .bottom div p{
+    color: #333333;
+    font-size: 14px;
 }
 
 @media (max-width:474px) {

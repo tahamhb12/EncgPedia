@@ -1,0 +1,43 @@
+.assigned_list {
+    height: 100vh;
+    background: white;
+}
+.assigned_list .assigned_list_header{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-inline: 29px;
+}
+.assigned_list .assigned_list_header p{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+.assigned_list .courses_requests{
+    padding-inline: 29px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.assigned_list .courses_requests .course_infos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    background-color: #F5F5F5;
+    padding: 9px 14px;
+    height: 68px;
+    background: #F5F5F5;
+    border-radius: 11px;
+}
+.assigned_list .courses_requests .course_infos .infos h2{
+    font-size: 12px;
+    font-weight: 600;
+}
+.assigned_list .courses_requests .course_infos .infos p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #BBBBBB;
+}
