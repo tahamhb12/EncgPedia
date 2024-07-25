@@ -80,6 +80,7 @@
     width: 769px;
     font-size: 29px;
     cursor: pointer;
+    
 }
 .homepage .section .inputs svg{
     position: absolute;
@@ -237,10 +238,10 @@
 .new_interface .drop_down{
     position: absolute;
     right: 20px;
-    font-size: 21px;
-    top: 12px;
+    font-size: 17px;
+    top: 15px;
+    color: gray;
 }
-
 @media (max-width:1391px) {
     .header .date p{
         display: none;
@@ -331,6 +332,7 @@
         position: relative;
         top: 1px;
     }
+
 }
 @media (max-width:538px) {
     .homepage .section .inputs .semestre_input,
@@ -546,8 +548,8 @@
     position: relative;
 }
 .homepage .show_contribute{
-    top: 30px;
-    right: 55px;
+    top: 36px;
+    right: 33px;
     position: absolute;
     cursor: pointer;
 }
