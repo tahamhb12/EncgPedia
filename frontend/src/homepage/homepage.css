@@ -18,7 +18,7 @@
 }
 .header .login{
     background: rgba(245, 132, 31, 0.09);
-    border-radius: 16px;
+    border-radius: 26% !important;
     width: 64px;
     height: 48px;
     display: flex;
@@ -234,8 +234,8 @@
 .new_interface .drop_down{
     position: absolute;
     right: 20px;
-    font-size: 17px;
-    top: 15px;
+    font-size: 14px;
+    top: 17px;
     color: gray;
 }
 @media (max-width:1391px) {

@@ -33,7 +33,7 @@ const Sidebar = (props) => {
                 </div>}
                 {!user ? 
                 <div onClick={()=>navigate("/login")} className="home">
-                    <img src={login} alt="" />
+                    <img style={{position:"relative",left:"-3px"}} src={login} alt="" />
                     <h3>Login</h3>
                 </div>
                 :
